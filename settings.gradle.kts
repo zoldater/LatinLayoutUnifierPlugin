@@ -1,1 +1,1 @@
-rootProject.name = "LatinLayoutUnifierPlugin"
+rootProject.name = "UniversalLatinLayoutPlugin"

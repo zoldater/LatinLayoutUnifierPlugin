@@ -1,0 +1,18 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.github.zoldater.latinlayoutunifier</id>
+    <name>LatinLayoutUnifierPlugin</name>
+    <vendor>zoldater</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.zoldater.universalLayout.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.zoldater.universalLayout.services.MyProjectService"/>
+    </extensions>
+
+    <applicationListeners>
+        <listener class="com.zoldater.universalLayout.listeners.MyProjectManagerListener"
+                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
+    </applicationListeners>
+</idea-plugin>

@@ -1,4 +1,4 @@
-package com.github.zoldater.latinlayoutunifierplugin
+package com.zoldater.universalLayout
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls
