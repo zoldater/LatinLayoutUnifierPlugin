@@ -19,7 +19,5 @@ enum class SupportedLatinLanguage {
     ROMANIAN,
     SPANISH,
     SWEDISH,
-    TURKISH,
-    WELSH
 }
 
