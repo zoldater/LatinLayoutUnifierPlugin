@@ -7,15 +7,12 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.zoldater.universalLayout.services.MyApplicationService"/>
-        <applicationService serviceImplementation="com.zoldater.universalLayout.services.UniversalLayoutSettings"/>
+        <preloadingActivity implementation="com.zoldater.universalLayout.DispatcherRunningStartupActivity"/>
         <applicationConfigurable parentId="tools"
-                                 instance="com.zoldater.universalLayout.services.UniversalLayoutConfigurable"
-                                 id="com.zoldater.universalLayout.services.UniversalLayoutConfigurable"
+                                 instance="com.zoldater.universalLayout.settings.UniversalLayoutConfigurable"
+                                 id="com.zoldater.universalLayout.settings.UniversalLayoutConfigurable"
                                  displayName="Universal Latin Layout"/>
-
     </extensions>
-
     <applicationListeners>
     </applicationListeners>
 </idea-plugin>

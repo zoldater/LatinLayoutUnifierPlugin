@@ -1,13 +1,12 @@
-package com.zoldater.universalLayout.services
+package com.zoldater.universalLayout.settings
 
-import com.intellij.openapi.components.PersistentStateComponent
-import com.intellij.openapi.components.ServiceManager
-import com.intellij.openapi.components.State
-import com.intellij.openapi.components.Storage
+import com.intellij.openapi.components.*
 import com.intellij.util.xmlb.XmlSerializerUtil
+import com.zoldater.universalLayout.services.UniversalLayoutSubstitutionService
 import com.zoldater.universalLayout.util.*
 
-@State(name = SETTINGS_SECTION, storages = [Storage(value = SETTINGS_FILE)])
+@Service(value = [Service.Level.PROJECT])
+@State(name = SETTINGS_SECTION, storages = [Storage(value = SETTINGS_FILE, roamingType = RoamingType.DISABLED)])
 class UniversalLayoutSettings : PersistentStateComponent<UniversalLayoutSettings> {
     var selectedLanguage: SupportedLatinLanguage = SupportedLatinLanguage.UNIVERSAL
     var isCircleCapitalLetterMode: Boolean = true

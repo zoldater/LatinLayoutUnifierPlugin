@@ -34,28 +34,7 @@
               <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <model>
-                <item value="Universal"/>
-                <item value="Czech"/>
-                <item value="Danish"/>
-                <item value="Dutch"/>
-                <item value="Esperanto"/>
-                <item value="Finnish"/>
-                <item value="French"/>
-                <item value="German"/>
-                <item value="Hungarian"/>
-                <item value="Icelandic"/>
-                <item value="Italian"/>
-                <item value="Maori"/>
-                <item value="Norwegian"/>
-                <item value="Polish"/>
-                <item value="Portuguese"/>
-                <item value="Romanian"/>
-                <item value="Spanish"/>
-                <item value="Swedish"/>
-                <item value="Turkish"/>
-                <item value="Welsh"/>
-              </model>
+              <model/>
             </properties>
           </component>
           <component id="78837" class="javax.swing.JLabel" binding="selectKeyLabel">

@@ -1,8 +1,10 @@
 package com.zoldater.universalLayout;
 
 import com.intellij.openapi.util.SystemInfo;
+import com.zoldater.universalLayout.util.SupportedLatinLanguage;
 
 import javax.swing.*;
+import java.util.Arrays;
 
 public class PluginSettings {
     private JPanel panel;
@@ -29,6 +31,11 @@ public class PluginSettings {
         checkBoxAlt.setText(altText);
         String metaText = SystemInfo.isMac ? "⌘ Command" : "Win";
         checkBoxMeta.setText(metaText);
+        selectLanguageBox.setModel(
+                new DefaultComboBoxModel(
+                        Arrays.stream(SupportedLatinLanguage.values()).map(SupportedLatinLanguage::name).toArray()
+                )
+        );
     }
 
     public JPanel getPanel() {

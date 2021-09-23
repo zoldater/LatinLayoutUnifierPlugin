@@ -1,6 +1,7 @@
 package com.zoldater.universalLayout.util
 
 enum class SupportedLatinLanguage {
+    NONE,
     UNIVERSAL,
     CZECH,
     DANISH,
